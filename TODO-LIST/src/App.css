@@ -18,27 +18,27 @@
   justify-content: space-between;
   width: 300px;
   padding: 10px;
-  background-color: #E1F0F7;
+  background-color: #e1f0f7;
   border-radius: 6px;
   gap: 5px;
 }
 
-input{
+input {
   padding: 7px;
   width: 98%;
   border: none;
   border-radius: 6px;
   outline: none;
 }
-input:focus{
+input:focus {
   box-shadow: 0 0 0 2px #2cb0ee;
 }
-.btn-addTodo{
+.btn-addTodo {
   padding: 6px;
   border: none;
   border-radius: 4px;
   outline: none;
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   cursor: pointer;
   color: white;
   font-weight: 700;
@@ -49,7 +49,7 @@ input:focus{
 .todo {
   width: 300px;
   padding: 10px;
-  background-color: #E1F0F7;
+  background-color: #e1f0f7;
   border-radius: 6px;
   margin-top: 10px;
   display: flex;
@@ -61,33 +61,35 @@ input:focus{
   font-size: 16px;
   font-weight: 700;
   margin-right: auto;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
-.utils{
+.utils {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .go-up {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 6px solid #1DA1F2;
+  border-bottom: 6px solid #1da1f2;
   cursor: pointer;
 }
 
-.go-down{
-  width: 0; 
-  height: 0; 
+.go-down {
+  width: 0;
+  height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #1DA1F2;
+  border-top: 6px solid #1da1f2;
   cursor: pointer;
 }
 
-.remove{
+.remove {
   position: relative;
   width: 20px;
   height: 20px;
@@ -96,24 +98,24 @@ input:focus{
 
 .remove::after {
   position: absolute;
-  content:'';
+  content: "";
   width: 100%;
   height: 2px;
   background-color: black;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   border-radius: 999px;
   transform: translateY(10px) rotate(-45deg);
 }
 
 .remove::before {
   position: absolute;
-  content:'';
+  content: "";
   width: 100%;
   height: 2px;
   background-color: black;
-  top:100%;
-  left:0;
+  top: 100%;
+  left: 0;
   border-radius: 999px;
   transform: translateY(-10px) rotate(45deg);
 }
